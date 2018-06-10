@@ -9,7 +9,7 @@ package tropas;
  *
  * @author victor
  */
-class tropa{
+public class tropa{
     private int vida = 0;
     private String race = "";
     private String type= "";
@@ -21,7 +21,7 @@ class tropa{
 
     public void race(String race) {
         this.race = race;
-        System.out.print("adding sauce");
+        System.out.print("adding race");
     }
 
     public void type(String type) {
@@ -30,6 +30,24 @@ class tropa{
     public void attack(int attack){
         this.atackt = attack;
     }
+    public String getrace(){
+        return race;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getAtackt() {
+        System.out.print("             GSDGSDGGGGGGGGGGGGGGGGGGGGGGGGGGGG \n");
+        return atackt;
+        
+    }
+    
 }
 
 /* "Abstract Builder" */
@@ -55,7 +73,7 @@ class JOOBuilder extends troopBuilder {
     
     public void buildrace() {
         tropa.race("JOO");
-        System.out.print("CROSS - ");
+        System.out.print("MONEY");
     }
 
     public void buildtype() {

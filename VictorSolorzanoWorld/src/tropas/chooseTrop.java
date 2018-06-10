@@ -11,14 +11,15 @@ package tropas;
  */
 import tropas.chose;
 import tropas.training;
+import razas.JOOS;
 public class chooseTrop {
     chose type;
 training trainer = new training();
-    public void Tropa(chose type) {
+    public chooseTrop(chose type) {
         this.type = type;
     }
     
-    public void tellItLikeItIs() {
+    public tropa createtropp() {
         switch (type) {
             case NIGarmy:
                 troopBuilder NIGer = new NIGBuilder();
@@ -26,7 +27,8 @@ training trainer = new training();
                 trainer.constructTRooP();
 
                 tropa nig = trainer.getTropa();
-                break;
+                return nig;
+                
                     
             case JOOarmy:
                 troopBuilder JOOer = new JOOBuilder();
@@ -34,7 +36,7 @@ training trainer = new training();
                 trainer.constructTRooP();
 
                 tropa joo = trainer.getTropa();
-                break;
+                return joo;
                          
             
                         
@@ -42,5 +44,6 @@ training trainer = new training();
                 System.out.println("OII m8 there are no troops whith that name");
                 break;
         }
+        return null;
 }
    }

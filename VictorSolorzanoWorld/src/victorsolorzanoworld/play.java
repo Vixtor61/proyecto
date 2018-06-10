@@ -5,10 +5,21 @@
  */
 package victorsolorzanoworld;
 
+
+import razas.JOOS;
+import razas.RACE;
+import tropas.tropa;
+
 /**
  *
  * @author victor
  */
 public class play {
-    
+ private int turn;
+ 
+ public void atack(JOOS atacker,JOOS atacked, int index){
+     atacked.restlife(index, atacker.getTrop(index).getAtackt()
+     );
+   
+}
 }
