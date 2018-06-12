@@ -16,6 +16,22 @@ public class RACE {
     private int resources;
     private int live;
     public ArrayList<tropa> TropList = new ArrayList<tropa>();
+
+    public int getResources() {
+        return resources;
+    }
+
+    public void setResources(int resources) {
+        this.resources = resources;
+    }
+
+    public int getLive() {
+        return live;
+    }
+
+    public void setLive(int live) {
+        this.live = live;
+    }
     
     public void SHOW(){
         System.out.print("Showing all trops: \n");
@@ -26,5 +42,6 @@ public class RACE {
         
         }
     }
+    
     
 }
