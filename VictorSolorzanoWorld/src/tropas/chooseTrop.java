@@ -41,7 +41,7 @@ training trainer = new training();
             
                         
             default:
-                System.out.println("OII m8 there are no troops whith that name");
+                System.out.println("OII m8 there are no troops with that name");
                 break;
         }
         return null;

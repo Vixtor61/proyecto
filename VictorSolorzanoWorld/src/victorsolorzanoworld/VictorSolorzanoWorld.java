@@ -28,7 +28,7 @@ public class VictorSolorzanoWorld {
         
         j.TropList.add(f.createtropp());
         j.SHOW();
-        System.out.print("U here \n");
+        System.out.print(" U here \n");
         p.atack(j,j,0);
         j.SHOW();
        

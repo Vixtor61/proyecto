@@ -21,7 +21,7 @@ public class tropa{
 
     public void race(String race) {
         this.race = race;
-        System.out.print("adding race");
+        //System.out.print("adding race");
     }
 
     public void type(String type) {
@@ -43,7 +43,7 @@ public class tropa{
     }
 
     public int getAtackt() {
-        System.out.print("             GSDGSDGGGGGGGGGGGGGGGGGGGGGGGGGGGG \n");
+        
         return atackt;
         
     }
@@ -72,8 +72,8 @@ abstract class troopBuilder {
 class JOOBuilder extends troopBuilder {
     
     public void buildrace() {
-        tropa.race("JOO");
-        System.out.print("MONEY");
+        tropa.race("JOO ");
+        System.out.print("THE JOO SAYS MONEY \n");
     }
 
     public void buildtype() {
@@ -92,8 +92,8 @@ class JOOBuilder extends troopBuilder {
 class NIGBuilder extends troopBuilder {
     
     public void buildrace() {
-        tropa.race("NIG");
-        System.out.print("CROSS - ");
+        tropa.race("NIG ");
+        System.out.print("THE NIG SAYS ASHHHH \n");
     }
 
     public void buildtype() {
@@ -125,5 +125,6 @@ class training {
         troopBuilder.buildvida();
         troopBuilder.buildrace();
         troopBuilder.buildtype();
+        troopBuilder.buildattack();
     }
 }

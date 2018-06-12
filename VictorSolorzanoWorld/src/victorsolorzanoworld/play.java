@@ -18,7 +18,8 @@ public class play {
  private int turn;
  
  public void atack(JOOS atacker,JOOS atacked, int index){
-     atacked.restlife(index, atacker.getTrop(index).getAtackt()
+     int a = atacker.getTrop(index).getAtackt();
+     atacked.restlife(index, a
      );
    
 }

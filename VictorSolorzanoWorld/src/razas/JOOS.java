@@ -10,28 +10,18 @@ package razas;
  * @author victor
  */
 import tropas.tropa;
-import java.util.ArrayList;
+
 public class JOOS extends RACE {
-    public ArrayList<tropa> TropList = new ArrayList<tropa>();
+   
     
-    public void SHOW(){
-        System.out.print("Showing all JOO trops: ");
-        for (tropa TropList : TropList){
-            
-            System.out.print(TropList.getrace()+" troop type:"+TropList.getType()+ " troop atacck:"+/*TropList.getAtackt()+*/" troop life:"+TropList.getVida()+" \n");
-            
-        
-        }
-    }
+    
     public tropa getTrop(int index){
         int aux;
         for (tropa tropList : TropList){
             aux = TropList.indexOf(tropList);
-            System.out.print(aux+ " HEY");
-           
-            //System.out.print(tropList.getrace()+" troop type:"+tropList.getType()+ " troop atacck:"+tropList.getAtackt()+" troop life:"+tropList.getVida()+" ");
+            
             if(index == aux){
-                System.out.print("HHHHHH");
+              
                 return tropList;
             }
         
@@ -43,14 +33,14 @@ public class JOOS extends RACE {
         int aux2;
         for (tropa tropList : TropList){
             aux = TropList.indexOf(tropList);
-            System.out.print(aux+ " HEY");
+            
            
-            //System.out.print(tropList.getrace()+" troop type:"+tropList.getType()+ " troop atacck:"+tropList.getAtackt()+" troop life:"+tropList.getVida()+" ");
             if(index == aux){
-                System.out.print("HHHHHH");
-                aux2 = tropList.getVida();
-                tropList.vida(aux2 - rest);
                 
+                aux2 = tropList.getVida();
+                
+                tropList.vida(aux2 - rest);
+                System.out.print("THE JOO HAS - "+ rest + " of life left \n");
             }
         
         }
