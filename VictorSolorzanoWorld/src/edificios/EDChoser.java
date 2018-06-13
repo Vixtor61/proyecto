@@ -5,22 +5,20 @@
  */
 package edificios;
 
-
-
-
 /**
  *
  * @author UCA
  */
-
 public class EDChoser {
+
     choseEd type;
-Rtypemaker trainer = new Rtypemaker();
-Ttypemaker trainer1 = new Ttypemaker();
+    Rtypemaker trainer = new Rtypemaker();
+    Ttypemaker trainer1 = new Ttypemaker();
+
     public EDChoser(choseEd type) {
         this.type = type;
     }
-    
+
     public rtype createtropp() {
         switch (type) {
             case rtype1:
@@ -30,33 +28,48 @@ Ttypemaker trainer1 = new Ttypemaker();
 
                 rtype nig = trainer.getTropa();
                 return nig;
-                
-                    
+
             case rtype2:
                 Eresource_Builder JOOer = new rtype2();
                 trainer.setTroopBuilder(JOOer);
-                
+
                 trainer.constructTRooP();
 
                 rtype joo = trainer.getTropa();
                 return joo;
-                case rtype3:
+                
+            case rtype3:
                 Eresource_Builder JOOe = new rtype3();
                 trainer.setTroopBuilder(JOOe);
-                
+
                 trainer.constructTRooP();
 
                 rtype joo1 = trainer.getTropa();
                 return joo1;
-                
-                         
-            
-                        
+
             default:
                 System.out.println("OII m8 there are no troops with that name");
                 break;
         }
         return null;
-}
-   }
+    }
 
+    public troopmaker createTmaker() {
+        switch (type) {
+            case tmaker:
+                Tmaker_Builder NIGer = new tmaker1();
+                trainer1.setTroopBuilder(NIGer);
+                trainer1.constructTRooP();
+
+                troopmaker nig = trainer1.getTropa();
+                return nig;
+
+         
+
+            default:
+                System.out.println("OII m8 there are no troops with that name");
+                break;
+        }
+        return null;
+    }
+}

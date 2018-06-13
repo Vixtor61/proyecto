@@ -30,5 +30,22 @@ public class NIG extends RACE{
         }
         return null;
     }
-    
+     public void restlife(int index,int rest){
+        int aux;
+        int aux2;
+        for (tropa tropList : TropList){
+            aux = TropList.indexOf(tropList);
+            
+           
+            if(index == aux){
+                
+                aux2 = tropList.getVida();
+                
+                tropList.vida(aux2 - rest);
+                System.out.print("THE NIG HAS - "+ rest + " of life left \n");
+            }
+        
+        }
+        
+}
 }

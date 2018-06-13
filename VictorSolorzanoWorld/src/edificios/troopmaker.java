@@ -32,9 +32,11 @@ public class troopmaker extends edificio {
         
     }
     public void maketroop(NIG nig,String Type){
-        
-        chooseTrop f= new chooseTrop(chose.NIGespecial);
+        if(Type == "especial"){
+              chooseTrop f= new chooseTrop(chose.NIGespecial);
         nig.TropList.add(f.createtropp());
+      
+        }
     }
     
 }

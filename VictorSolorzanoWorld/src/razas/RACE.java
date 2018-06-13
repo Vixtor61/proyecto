@@ -64,6 +64,27 @@ public class RACE {
         
         }
     }
-    
+    public void SHOWTMAKER(){
+        System.out.print("Showing all tropmakers: \n");
+        for (troopmaker TropList : tropmakerList){
+            
+            System.out.print("tropmaker race:"+TropList.getrace()+" troopmaker type:"+TropList.getType()+" troopmaker life:"+TropList.getVida()+" \n");
+            
+        
+        }
+    }
+    public troopmaker getTropMaker(int index){
+        int aux;
+        for (troopmaker tropList : tropmakerList){
+            aux = tropmakerList.indexOf(tropList);
+           
+            
+            if(index == aux){
+                return tropList;
+            }
+        
+        }
+        return null;
+    }
     
 }
