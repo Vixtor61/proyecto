@@ -8,9 +8,11 @@ package victorsolorzanoworld;
 
 import edificios.EDChoser;
 import edificios.choseEd;
+import edificios.edificio;
+import edificios.rtype;
+import edificios.troopmaker;
 import razas.JOOS;
 import razas.NIG;
-import razas.RACE;
 import tropas.tropa;
 
 /**
@@ -19,6 +21,9 @@ import tropas.tropa;
  */
 public class play {
  private int turn;
+ public void Start(){
+     
+ }
  
  public void atack(JOOS atacker,NIG atacked, int index){
      int a = atacker.getTrop(index).getAtackt();
@@ -27,6 +32,29 @@ public class play {
     
    
 }
+ 
+ public void atack(tropa atacker,tropa atacked, int index){
+     atacked.restlife(atacker.getAtackt());
+    
+   
+}
+ 
+ public void atack(tropa atacker,edificio atacked){
+     atacked.restlife(atacker.getAtackt());
+     }
+ 
+ public void atack(tropa atacker,troopmaker atacked){
+     atacked.restlife(atacker.getAtackt());
+     }
+ 
+ 
+ public void atack(tropa atacker,rtype atacked){
+     atacked.restlife(atacker.getAtackt());
+     }
+ 
+    
+   
+
  public void addB(JOOS a){
      EDChoser d = new EDChoser(choseEd.tmaker);
      

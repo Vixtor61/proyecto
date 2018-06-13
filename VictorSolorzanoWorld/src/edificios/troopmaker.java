@@ -9,7 +9,7 @@ import razas.JOOS;
 import razas.NIG;
 import tropas.chooseTrop;
 import tropas.chose;
-import tropas.tropa;
+
 
 /**
  *

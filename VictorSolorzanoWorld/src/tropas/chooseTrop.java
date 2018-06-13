@@ -11,7 +11,7 @@ package tropas;
  */
 import tropas.chose;
 import tropas.training;
-import razas.JOOS;
+
 public class chooseTrop {
     chose type;
 training trainer = new training();
@@ -38,8 +38,23 @@ training trainer = new training();
 
                 tropa joo = trainer.getTropa();
                 return joo;
-                         
-            
+             
+            case JOOarmy:
+                troopBuilder JOOar = new JOOSarmy();
+                trainer.setTroopBuilder(JOOar);
+                
+                trainer.constructTRooP();
+
+                tropa joos = trainer.getTropa();
+                return joos;            
+            case NIGarmy:
+                troopBuilder NIGar = new NIGarmy();
+                trainer.setTroopBuilder(NIGar);
+                
+                trainer.constructTRooP();
+
+                tropa niga = trainer.getTropa();
+                return niga;
                         
             default:
                 System.out.println("OII m8 there are no troops with that name");

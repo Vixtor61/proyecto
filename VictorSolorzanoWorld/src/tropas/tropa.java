@@ -47,6 +47,10 @@ public class tropa{
         return atackt;
         
     }
+    public void restlife(int rest){
+        vida = vida-rest;
+                
+    }
     
 }
 
@@ -105,6 +109,42 @@ class NIGBuilder extends troopBuilder {
     }
     public void buildattack() {
         tropa.attack(3);
+    }
+}
+class NIGarmy extends troopBuilder {
+    
+    public void buildrace() {
+        tropa.race("NIG");
+        System.out.print("THE NIG SAYS ASHHHH \n");
+    }
+
+    public void buildtype() {
+        tropa.type("army");
+    }
+
+    public void buildvida() {
+        tropa.vida(11);
+    }
+    public void buildattack() {
+        tropa.attack(3);
+    }
+}
+class JOOSarmy extends troopBuilder {
+    
+    public void buildrace() {
+        tropa.race("JOO");
+        System.out.print("THE JOO SAYS Money \n");
+    }
+
+    public void buildtype() {
+        tropa.type("army");
+    }
+
+    public void buildvida() {
+        tropa.vida(17);
+    }
+    public void buildattack() {
+        tropa.attack(2);
     }
 }
 

@@ -40,6 +40,11 @@ public class edificio{
     public String getType() {
         return type;
     }
+    public void restlife(int rest){
+        vida = vida-rest;
+                
+    }
+    
 
     
 }

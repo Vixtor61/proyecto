@@ -9,11 +9,9 @@ package victorsolorzanoworld;
  *
  * @author victor
  */
-import tropas.chooseTrop;
-import tropas.chose;
 import razas.JOOS;
 import razas.NIG;
-import victorsolorzanoworld.play;
+
 public class VictorSolorzanoWorld {
 
     /**
