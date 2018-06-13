@@ -8,6 +8,7 @@ package razas;
 import edificios.rtype;
 import edificios.troopmaker;
 import java.util.ArrayList;
+import java.util.Scanner;
 import tropas.tropa;
 
 /**
@@ -15,14 +16,41 @@ import tropas.tropa;
  * @author victor
  */
 public class RACE {
+    private String rtype1name;
+    private String rtype2name;
+    private String rtype3name;
     private int resources1;
     private int resources2;
     private int resources3;
     private int live;
+    public boolean defeat = true;
     public ArrayList<tropa> TropList = new ArrayList<tropa>();
     public ArrayList<rtype> rtypeList = new ArrayList<rtype>();
     public ArrayList<troopmaker> tropmakerList = new ArrayList<troopmaker>();
-
+    public void menuEdificio(){
+        int p;
+        Scanner g = new Scanner(System.in);
+        
+        System.out.print("1 - create a building\n");
+        System.out.print("2 - troopmakerbuilding\n");
+        System.out.print("3 - vehiclemaker building\n");
+        System.out.print("4 - resource building\n");
+        System.out.print("5 - salir\n");
+        p=g.nextInt();
+        switch(p){
+            case 1:
+                
+                break;
+            case 2:
+                break;
+            case 3:
+                
+                break;
+            default:
+                break;
+                
+        }
+    }
     public int getResources() {
         return resources1;
     }

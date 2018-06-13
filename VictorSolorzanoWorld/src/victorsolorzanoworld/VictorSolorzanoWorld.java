@@ -36,6 +36,7 @@ public class VictorSolorzanoWorld {
        */
         JOOS j = new JOOS();
         NIG n = new NIG();
+        
         p.addB(j);
         p.addB(n);
         j.getTropMaker(0).maketroop(j, "especial");

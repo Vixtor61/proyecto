@@ -11,6 +11,7 @@ import edificios.choseEd;
 import edificios.edificio;
 import edificios.rtype;
 import edificios.troopmaker;
+import edificios.vehiclemaker;
 import razas.JOOS;
 import razas.NIG;
 import tropas.tropa;
@@ -20,9 +21,17 @@ import tropas.tropa;
  * @author victor
  */
 public class play {
+ private int fasecounter;
  private int turn;
+ private JOOS j = null;
+private NIG n = null;
+
  public void Start(){
-     
+     j = new JOOS();
+     n = new NIG();
+     while(j.defeat && n.defeat){
+         
+     }
  }
  
  public void atack(JOOS atacker,NIG atacked, int index){
@@ -33,26 +42,18 @@ public class play {
    
 }
  
- public void atack(tropa atacker,tropa atacked, int index){
-     atacked.restlife(atacker.getAtackt());
-    
-   
-}
- 
- public void atack(tropa atacker,edificio atacked){
-     atacked.restlife(atacker.getAtackt());
-     }
- 
- public void atack(tropa atacker,troopmaker atacked){
-     atacked.restlife(atacker.getAtackt());
-     }
- 
- 
- public void atack(tropa atacker,rtype atacked){
-     atacked.restlife(atacker.getAtackt());
-     }
- 
-    
+ public void atack(tropa ataked,int g){
+     ataked.restlife(g);
+ }
+ public void atack(rtype ataked,int g){
+     ataked.restlife(g);
+ }
+ public void atack(troopmaker ataked,int g){
+     ataked.restlife(g);
+ }
+ public void atack(vehiclemaker ataked,int g){
+     ataked.restlife(g);
+ }   
    
 
  public void addB(JOOS a){

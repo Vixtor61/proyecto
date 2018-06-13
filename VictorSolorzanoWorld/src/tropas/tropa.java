@@ -14,6 +14,23 @@ public class tropa{
     private String race = "";
     private String type= "";
     private int atackt = 0;
+    private boolean isA;
+
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
+    }
+
+    public boolean isIsA() {
+        return isA;
+    }
+
+    public void setIsA(boolean isA) {
+        this.isA = isA;
+    }
 
     public void vida(int vida) {
         this.vida = vida;
@@ -70,6 +87,7 @@ abstract class troopBuilder {
     public abstract void buildtype();
     public abstract void buildvida();
     public abstract void buildattack();
+    public abstract void buildstatus();
 }
 
 /* "ConcreteBuilder" */
@@ -89,6 +107,11 @@ class JOOBuilder extends troopBuilder {
     }
     public void buildattack() {
         tropa.attack(4);
+    }
+
+   
+    public void buildstatus() {
+        tropa.setIsA(false);
     }
 }
 
@@ -110,6 +133,10 @@ class NIGBuilder extends troopBuilder {
     public void buildattack() {
         tropa.attack(3);
     }
+    
+    public void buildstatus() {
+        tropa.setIsA(false);
+    }
 }
 class NIGarmy extends troopBuilder {
     
@@ -128,6 +155,10 @@ class NIGarmy extends troopBuilder {
     public void buildattack() {
         tropa.attack(3);
     }
+    
+    public void buildstatus() {
+        tropa.setIsA(false);
+    }
 }
 class JOOSarmy extends troopBuilder {
     
@@ -145,6 +176,10 @@ class JOOSarmy extends troopBuilder {
     }
     public void buildattack() {
         tropa.attack(2);
+    }
+ 
+    public void buildstatus() {
+        tropa.setIsA(false);
     }
 }
 
@@ -166,5 +201,6 @@ class training {
         troopBuilder.buildrace();
         troopBuilder.buildtype();
         troopBuilder.buildattack();
+        troopBuilder.buildstatus();
     }
 }
