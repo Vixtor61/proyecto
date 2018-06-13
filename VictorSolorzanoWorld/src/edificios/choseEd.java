@@ -11,7 +11,7 @@ package edificios;
  */
 public enum choseEd {
    
-    rtype1,rtype2,rtype3,tmaker;
+    rtype1,rtype2,rtype3,tmaker,tmaker2,rtype4,rtype5,rtype6;
 
 
 }

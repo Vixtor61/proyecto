@@ -50,8 +50,8 @@ class tmaker1 extends Tmaker_Builder{
 class tmaker2 extends Tmaker_Builder{
     
     public void buildrace() {
-        r.race("JOO");
-        System.out.print("THE JOO SAYS MONEY \n");
+        r.race("NIG");
+        System.out.print("THE NIG SAYS MONEY \n");
     }
 
     public void buildtype() {
@@ -61,9 +61,7 @@ class tmaker2 extends Tmaker_Builder{
     public void buildvida() {
         r.vida(45);
     }
-    public void buildR() {
-   
-    }
+    
     
 }
 

@@ -34,6 +34,7 @@ public class VictorSolorzanoWorld {
         p.atack(j,j,0);
         j.SHOW();
        */
+        /*
         JOOS j = new JOOS();
         NIG n = new NIG();
         
@@ -52,6 +53,8 @@ public class VictorSolorzanoWorld {
         j.SHOW();
         System.out.print("NIGS\n");
         n.SHOW();
-    }
+ */
+        p.Start();
+}
     
 }

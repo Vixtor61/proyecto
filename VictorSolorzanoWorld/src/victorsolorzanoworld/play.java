@@ -30,7 +30,7 @@ private NIG n = null;
      j = new JOOS();
      n = new NIG();
      while(j.defeat && n.defeat){
-         
+         j.menuEdificio(j);
      }
  }
  

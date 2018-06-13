@@ -89,6 +89,67 @@ class rtype3 extends Eresource_Builder{
     }
     
 }
+class rtype4 extends Eresource_Builder{
+    
+    public void buildrace() {
+        r.race("NIG");
+        System.out.print("THE NIG SAY OGHA BOOGA \n");
+    }
+
+    public void buildtype() {
+        r.type("especial");
+    }
+
+    public void buildvida() {
+        r.vida(120);
+    }
+    public void buildR() {
+        r.setResourceP(46);
+    }
+    
+}
+class rtype5 extends Eresource_Builder{
+    
+    public void buildrace() {
+        r.race("NIG");
+        System.out.print("THE NIG SAYS GOHA \n");
+    }
+
+    public void buildtype() {
+        r.type("especial");
+    }
+
+    public void buildvida() {
+        r.vida(165);
+    }
+    public void buildR() {
+        r.setResourceP(36);
+    }
+    
+    
+}
+class rtype6 extends Eresource_Builder{
+    
+    public void buildrace() {
+        r.race("NIG");
+        System.out.print("THE NIG SAYS OGHA BOOga \n");
+    }
+
+    public void buildtype() {
+        r.type("especial");
+    }
+
+    public void buildvida() {
+        r.vida(1000);
+    }
+    public void buildR() {
+        r.setResourceP(2);
+    }
+    
+}
+
+
+
 
 /* "Director" */
 class Rtypemaker {

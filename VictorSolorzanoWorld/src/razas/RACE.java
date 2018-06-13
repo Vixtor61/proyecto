@@ -27,7 +27,7 @@ public class RACE {
     public ArrayList<tropa> TropList = new ArrayList<tropa>();
     public ArrayList<rtype> rtypeList = new ArrayList<rtype>();
     public ArrayList<troopmaker> tropmakerList = new ArrayList<troopmaker>();
-    public void menuEdificio(){
+    public void menuEdificio(JOOS a){
         int p;
         Scanner g = new Scanner(System.in);
         
@@ -39,13 +39,17 @@ public class RACE {
         p=g.nextInt();
         switch(p){
             case 1:
-                
+                buildingChoose b = new buildingChoose();
+                b.chosea(a);
                 break;
             case 2:
+                a.SHOWTMAKER();
                 break;
             case 3:
                 
                 break;
+            case 4:
+                
             default:
                 break;
                 
@@ -97,6 +101,15 @@ public class RACE {
         for (troopmaker TropList : tropmakerList){
             
             System.out.print("tropmaker race:"+TropList.getrace()+" troopmaker type:"+TropList.getType()+" troopmaker life:"+TropList.getVida()+" \n");
+            
+        
+        }
+    }
+    public void SHOWRTYPES(){
+        System.out.print("Showing all tropmakers: \n");
+        for (rtype rtypeList : rtypeList){
+            
+            System.out.print("rtype race:"+rtypeList.getrace()+" troopmaker type:"+rtypeList.getType()+" troopmaker life:"+rtypeList.getVida()+" \n");
             
         
         }
