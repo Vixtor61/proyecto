@@ -10,5 +10,5 @@ package tropas;
  * @author victor
  */
 public enum chose {
-    NIGarmy,JOOarmy;
+    NIGespecial,JOOespecial;
 }

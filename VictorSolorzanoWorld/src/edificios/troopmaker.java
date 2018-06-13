@@ -19,13 +19,21 @@ public class troopmaker extends edificio {
     int fasesactual = 0;
     int fases=0;
     public void maketroop(JOOS JO,String Type){
-        
-        chooseTrop f= new chooseTrop(chose.JOOarmy);
+        if(Type == "especial"){
+            chooseTrop f= new chooseTrop(chose.JOOespecial);
         JO.TropList.add(f.createtropp());
+        }
+        if(Type == "army"){
+            /*
+            chooseTrop f= new chooseTrop(chose.JOOarmy);
+        JO.TropList.add(f.createtropp());
+*/        
+}
+        
     }
     public void maketroop(NIG nig,String Type){
         
-        chooseTrop f= new chooseTrop(chose.NIGarmy);
+        chooseTrop f= new chooseTrop(chose.NIGespecial);
         nig.TropList.add(f.createtropp());
     }
     

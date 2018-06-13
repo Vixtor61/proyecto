@@ -21,7 +21,7 @@ training trainer = new training();
     
     public tropa createtropp() {
         switch (type) {
-            case NIGarmy:
+            case NIGespecial:
                 troopBuilder NIGer = new NIGBuilder();
                 trainer.setTroopBuilder(NIGer);
                 trainer.constructTRooP();
@@ -30,9 +30,10 @@ training trainer = new training();
                 return nig;
                 
                     
-            case JOOarmy:
+            case JOOespecial:
                 troopBuilder JOOer = new JOOBuilder();
                 trainer.setTroopBuilder(JOOer);
+                
                 trainer.constructTRooP();
 
                 tropa joo = trainer.getTropa();

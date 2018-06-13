@@ -5,6 +5,8 @@
  */
 package razas;
 
+import edificios.rtype;
+import edificios.troopmaker;
 import java.util.ArrayList;
 import tropas.tropa;
 
@@ -13,20 +15,40 @@ import tropas.tropa;
  * @author victor
  */
 public class RACE {
-    private int resources;
+    private int resources1;
+    private int resources2;
+    private int resources3;
     private int live;
     public ArrayList<tropa> TropList = new ArrayList<tropa>();
+    public ArrayList<rtype> rtypeList = new ArrayList<rtype>();
+    public ArrayList<troopmaker> tropmakerList = new ArrayList<troopmaker>();
 
     public int getResources() {
-        return resources;
+        return resources1;
     }
 
     public void setResources(int resources) {
-        this.resources = resources;
+        this.resources1 = resources;
     }
 
     public int getLive() {
         return live;
+    }
+
+    public int getResources2() {
+        return resources2;
+    }
+
+    public void setResources2(int resources2) {
+        this.resources2 = resources2;
+    }
+
+    public int getResources3() {
+        return resources3;
+    }
+
+    public void setResources3(int resources3) {
+        this.resources3 = resources3;
     }
 
     public void setLive(int live) {

@@ -13,7 +13,7 @@ package edificios;
 abstract class Tmaker_Builder {
     protected troopmaker r;
 
-    public edificio getTropa() {
+    public troopmaker getTropa() {
         return r;
     }
 
@@ -32,7 +32,7 @@ abstract class Tmaker_Builder {
 class tmaker1 extends Tmaker_Builder{
     
     public void buildrace() {
-        r.race("JOO ");
+        r.race("JOO");
         System.out.print("THE JOO SAYS MONEY \n");
     }
 
@@ -50,7 +50,7 @@ class tmaker1 extends Tmaker_Builder{
 class tmaker2 extends Tmaker_Builder{
     
     public void buildrace() {
-        r.race("JOO ");
+        r.race("JOO");
         System.out.print("THE JOO SAYS MONEY \n");
     }
 
@@ -75,7 +75,7 @@ class Ttypemaker {
         rtypebuilder = pb;
     }
 
-    public edificio getTropa() {
+    public troopmaker getTropa() {
         return rtypebuilder.getTropa();
     }
 

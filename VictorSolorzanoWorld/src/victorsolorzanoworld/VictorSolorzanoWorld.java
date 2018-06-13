@@ -12,6 +12,7 @@ package victorsolorzanoworld;
 import tropas.chooseTrop;
 import tropas.chose;
 import razas.JOOS;
+import razas.NIG;
 import victorsolorzanoworld.play;
 public class VictorSolorzanoWorld {
 
@@ -20,19 +21,26 @@ public class VictorSolorzanoWorld {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
         play p = new play();
-        chooseTrop f= new chooseTrop(chose.JOOarmy);
+        /*
+        chooseTrop f= new chooseTrop(chose.JOOespecial);
         JOOS j = new JOOS();
         j.TropList.add(f.createtropp());
-        f = new chooseTrop(chose.NIGarmy);
+        f = new chooseTrop(chose.NIGespecial);
         
         j.TropList.add(f.createtropp());
         j.SHOW();
         System.out.print(" U here \n");
         p.atack(j,j,0);
         j.SHOW();
-       
+       */
+        JOOS j = new JOOS();
+        NIG n = new NIG();
         
+        j.SHOW();
+        n.SHOW();
         
     }
     

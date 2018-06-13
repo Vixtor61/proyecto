@@ -13,7 +13,7 @@ package edificios;
 abstract class Eresource_Builder {
     protected rtype r;
 
-    public edificio getTropa() {
+    public rtype getTropa() {
         return r;
     }
 
@@ -25,6 +25,7 @@ abstract class Eresource_Builder {
     public abstract void buildtype();
     public abstract void buildvida();
     public abstract void buildR();
+    
 
 }
 
@@ -32,7 +33,7 @@ abstract class Eresource_Builder {
 class rtype1 extends Eresource_Builder{
     
     public void buildrace() {
-        r.race("JOO ");
+        r.race("JOO");
         System.out.print("THE JOO SAYS MONEY \n");
     }
 
@@ -52,8 +53,9 @@ class rtype1 extends Eresource_Builder{
 class rtype2 extends Eresource_Builder{
     
     public void buildrace() {
-        r.race("JOO ");
+        r.race("JOO");
         System.out.print("THE JOO SAYS MONEY \n");
+    
     }
 
     public void buildtype() {
@@ -71,7 +73,7 @@ class rtype2 extends Eresource_Builder{
 class rtype3 extends Eresource_Builder{
     
     public void buildrace() {
-        r.race("JOO ");
+        r.race("JOO");
         System.out.print("THE JOO SAYS MONEY \n");
     }
 
@@ -96,7 +98,7 @@ class Rtypemaker {
         rtypebuilder = pb;
     }
 
-    public edificio getTropa() {
+    public rtype getTropa() {
         return rtypebuilder.getTropa();
     }
 
