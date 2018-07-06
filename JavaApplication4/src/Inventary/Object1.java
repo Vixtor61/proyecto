@@ -10,5 +10,11 @@ package Inventary;
  * @author estudiante
  */
 public class Object1 {
-    
+    private String ROAR;
+    public Object1(String a){
+        this.ROAR = a; 
+    }
+    public void USE(){
+        System.out.print(" "+ROAR+" ");
+    }
 }

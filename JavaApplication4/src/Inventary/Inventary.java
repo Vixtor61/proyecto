@@ -31,14 +31,29 @@ public class Inventary {
         for(Object1 Oactual : this.Object1List){
             if(Oactual.equals(ObjecttoUse)){
                 this.setOnUse(Oactual);
+                Oactual.USE();
             }
         }
+    }
+    public void useObjectOfList(int ObjecttoUse){
+        
+        try{
+            this.Object1List.get(ObjecttoUse);
+            useObjectOfList(this.Object1List.get(ObjecttoUse));
+        }
+        catch(Exception e){
+            System.out.print("sorry");
+        }
+        
     }
     //Add object to the lsit
     public void addObject1(Object1 add){
         if(this.Object1List.size() < this.ObjectMax){
             this.Object1List.add(add);
         }
+        else{
+        System.out.print("fdfdfd");
+    }
     }
     // remove Object from the list
     public void RemoveObject(Object1 remove){
@@ -47,6 +62,9 @@ public class Inventary {
     // Drop Object fron
     public void DropObject(Object1 remove){
         this.Object1List.remove(remove);
+    }
+    public Object1 getObject(int i){
+        return this.Object1List.get(i);
     }
     
     
