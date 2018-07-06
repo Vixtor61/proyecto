@@ -50,7 +50,17 @@ public class InventaryGui extends JPanel{
         lblF5.setBounds(50+100*3, 40, WIDTHB, HEIGHTB);
         lblF6 = new JLabel("Object no 5:");
         lblF6.setBounds(50+100*4, 40, WIDTHB, HEIGHTB);
-        
+        button = new JButton("CREATE OBJECT1");
+        button.setBounds(10, 400, WIDTHB, HEIGHTB);
+        button.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                Object1 l = new Object1("NEW ONE JAJAJAJAJJA");
+                Inventa.addObject1(l);
+            }
+            
+        });
+        add(button);
         add(lblF1);
         add(lblF2);
          add(lblF3);
@@ -69,7 +79,7 @@ public class InventaryGui extends JPanel{
         for(int i = 0;i<5;i++ ){
             
             JButton g = new JButton(""+(i));
-            Inventa.addObject1(new Object1("HHH"+i));
+            Inventa.addObject1(new Object1("I AM OBJECT ONE "+i));
             g.setBounds(50+i*100,100,WIDTHB,HEIGHTB);
             g.addActionListener(new ActionListener(){
        @Override
@@ -79,7 +89,8 @@ public class InventaryGui extends JPanel{
            
        System.out.println(e.getActionCommand());
            int foo = Integer.parseInt(e.getActionCommand());
-           System.out.print(foo);
+          //
+          //System.out.print(foo);
            
            JPopupMenu menu = new JPopupMenu("Menu");
                 menu.add("USE OBJECT").addActionListener(new ActionListener(){

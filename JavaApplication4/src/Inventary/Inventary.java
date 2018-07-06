@@ -49,10 +49,12 @@ public class Inventary {
     //Add object to the lsit
     public void addObject1(Object1 add){
         if(this.Object1List.size() < this.ObjectMax){
+            System.out.print("Object added\n");
+    
             this.Object1List.add(add);
         }
         else{
-        System.out.print("fdfdfd");
+        System.out.print("max object capacity reached\n");
     }
     }
     // remove Object from the list
